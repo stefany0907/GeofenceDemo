@@ -14,21 +14,21 @@
 @synthesize title;
 @synthesize subtitle;
 
-- (id)initWithTitle:(NSString *)newtitle Location:(CLLocationCoordinate2D)location {
-    self = [super init];
-    if (self != nil) {
-        self.title = newtitle;
-        self.coordinate = location;
+//- (id)initWithTitle:(NSString *)newtitle Location:(CLLocationCoordinate2D)location {
+//    self = [super init];
+//    if (self != nil) {
+//        self.title = newtitle;
+//        self.coordinate = location;
+//
+//    }
+//    return self;
+//}
 
-    }
-    return self;
-}
-
-- (MKAnnotationView *)annotationView {
-    MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:self reuseIdentifier:@"CustomAnnotation"];
-    annotationView.enabled = YES;
-    annotationView.canShowCallout = YES;
-    annotationView.image = [UIImage imageNamed:@"original"];
-    return annotationView;
-}
+//- (MKAnnotationView *)annotationView {
+//    MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:self reuseIdentifier:@"CustomAnnotation"];
+//    annotationView.enabled = YES;
+//    annotationView.canShowCallout = YES;
+//    annotationView.image = [UIImage imageNamed:@"original"];
+//    return annotationView;
+//}
 @end

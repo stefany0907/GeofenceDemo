@@ -34,18 +34,18 @@
     // Turn off the Interface until permission is acquired
     
     MKCoordinateRegion pin = {{0.0, 0.0}, {0.0, 0.0}};
+//    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(37.7749, -122.4194);
+
     pin.center.latitude = 37.7749;
     pin.center.longitude = -122.4194;
     pin.span.latitudeDelta = 0.01f;
     pin.span.longitudeDelta = 0.01f;
-//    [self.mapView setRegion:pin animated:YES];
-    
+    [self.mapView setRegion:pin animated:YES];
 
-//
-    MapPin *bus = [[MapPin alloc] initWithTitle:@"Stefanyccr" Location:pin.center];
-    
-    
-    
+    MapPin *bus = [[MapPin alloc] init];
+    bus.title = @"Stefanyccr inc";
+    bus.coordinate = pin.center;
+
     [self.mapView addAnnotation:bus];
     
 //    MapPin *annotation = [[MapPin alloc] init];

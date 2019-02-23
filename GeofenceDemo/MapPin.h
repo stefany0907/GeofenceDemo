@@ -17,12 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *subtitle;
 }
 
-@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *subtitle;
 
-
-- (id)initWithTitle:(NSString *)newtitle Location:(CLLocationCoordinate2D)lcation;
-- (MKAnnotationView *)annotationView;
+//- (id)initWithTitle:(NSString *)newtitle Location:(CLLocationCoordinate2D)lcation;
+//- (MKAnnotationView *)annotationView;
 
 @end
 
