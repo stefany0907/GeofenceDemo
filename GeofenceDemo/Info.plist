@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location is always and when in use - used for geographic region background alert</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is when in use - used for geographic region background alert</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is always - used for geographic region background alert</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

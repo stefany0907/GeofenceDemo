@@ -13,6 +13,10 @@
 		C97154D5221A00C500B76A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97154D4221A00C500B76A48 /* Assets.xcassets */; };
 		C97154D8221A00C500B76A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97154D6221A00C500B76A48 /* LaunchScreen.storyboard */; };
 		C97154DB221A00C500B76A48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C97154DA221A00C500B76A48 /* main.m */; };
+		C97154E3221A00D100B76A48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97154E2221A00D100B76A48 /* MapKit.framework */; };
+		C9D4183A221D1EC200B76F15 /* trace.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C9D41839221D1EC200B76F15 /* trace.gpx */; };
+		C9D4183C221D26AB00B76F15 /* trace1.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C9D4183B221D26AB00B76F15 /* trace1.gpx */; };
+		C9EF5DDE221FB72C00F70135 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EF5DDD221FB72C00F70135 /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		C97154D7221A00C500B76A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97154D9221A00C500B76A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97154DA221A00C500B76A48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C97154E2221A00D100B76A48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9D41839221D1EC200B76F15 /* trace.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trace.gpx; sourceTree = "<group>"; };
+		C9D4183B221D26AB00B76F15 /* trace1.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = trace1.gpx; sourceTree = "<group>"; };
+		C9EF5DDC221FB72C00F70135 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		C9EF5DDD221FB72C00F70135 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97154E3221A00D100B76A48 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +52,11 @@
 		C97154BF221A00C400B76A48 = {
 			isa = PBXGroup;
 			children = (
+				C9D41839221D1EC200B76F15 /* trace.gpx */,
+				C9D4183B221D26AB00B76F15 /* trace1.gpx */,
 				C97154CA221A00C400B76A48 /* GeofenceDemo */,
 				C97154C9221A00C400B76A48 /* Products */,
+				C97154E1221A00D000B76A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +75,8 @@
 				C97154CC221A00C400B76A48 /* AppDelegate.m */,
 				C97154CE221A00C400B76A48 /* ViewController.h */,
 				C97154CF221A00C400B76A48 /* ViewController.m */,
+				C9EF5DDC221FB72C00F70135 /* MapPin.h */,
+				C9EF5DDD221FB72C00F70135 /* MapPin.m */,
 				C97154D1221A00C400B76A48 /* Main.storyboard */,
 				C97154D4221A00C500B76A48 /* Assets.xcassets */,
 				C97154D6221A00C500B76A48 /* LaunchScreen.storyboard */,
@@ -69,6 +84,14 @@
 				C97154DA221A00C500B76A48 /* main.m */,
 			);
 			path = GeofenceDemo;
+			sourceTree = "<group>";
+		};
+		C97154E1221A00D000B76A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C97154E2221A00D100B76A48 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97154D8221A00C500B76A48 /* LaunchScreen.storyboard in Resources */,
+				C9D4183A221D1EC200B76F15 /* trace.gpx in Resources */,
+				C9D4183C221D26AB00B76F15 /* trace1.gpx in Resources */,
 				C97154D5221A00C500B76A48 /* Assets.xcassets in Resources */,
 				C97154D3221A00C400B76A48 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EF5DDE221FB72C00F70135 /* MapPin.m in Sources */,
 				C97154D0221A00C400B76A48 /* ViewController.m in Sources */,
 				C97154DB221A00C500B76A48 /* main.m in Sources */,
 				C97154CD221A00C400B76A48 /* AppDelegate.m in Sources */,
@@ -285,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7Z3K5NT4B;
 				INFOPLIST_FILE = GeofenceDemo/Info.plist;
@@ -302,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7Z3K5NT4B;
 				INFOPLIST_FILE = GeofenceDemo/Info.plist;
