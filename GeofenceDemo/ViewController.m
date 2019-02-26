@@ -36,8 +36,8 @@
     MKCoordinateRegion pin = {{0.0, 0.0}, {0.0, 0.0}};
 //    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(37.7749, -122.4194);
 
-    pin.center.latitude = 37.7749;
-    pin.center.longitude = -122.4194;
+    pin.center.latitude = 37.35;
+    pin.center.longitude = -122.00;
     pin.span.latitudeDelta = 0.01f;
     pin.span.longitudeDelta = 0.01f;
     [self.mapView setRegion:pin animated:YES];
@@ -58,8 +58,8 @@
     self.uiSwitch.enabled = NO;
     self.statusCheck.enabled = NO;
     
-    self.eventLabel.text = @"Event";
-    self.statusLabel.text = @"Status";
+    self.eventLabel.text = @"";
+    self.statusLabel.text = @"";
     self.mapIsMoving = NO;
     
     // Setup location manager
@@ -133,7 +133,7 @@
 
 - (void) setUpGeoRegion{
     //Create geo region to monitor
-    self.geoRegion = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake(42.294713, -83.708525) radius:100 identifier:@"MyRegionIdentifier"];
+    self.geoRegion = [[CLCircularRegion alloc] initWithCenter:CLLocationCoordinate2DMake(37.35, -122) radius:10 identifier:@"MyRegionIdentifier"];
 }
 
 - (IBAction)switchTapped:(id)sender {
@@ -195,10 +195,10 @@
     UILocalNotification *note = [[UILocalNotification alloc] init];
     note.fireDate = nil;
     note.repeatInterval = 0;
-    note.alertTitle = @"GeoFence Alert";
-    note.alertBody = [NSString stringWithFormat:@"You entered the geofence"];
+    note.alertTitle = @"Stefanyccr Inc. Promo!";
+    note.alertBody = [NSString stringWithFormat:@"Coupon code: XDR5W6G"];
     [[UIApplication sharedApplication] scheduleLocalNotification:note];
-    self.eventLabel.text = @"Entered";
+    self.eventLabel.text = @"Code:XDR5W6G";
     NSLog(@"*******Entered the region*******");
 }
 
@@ -206,10 +206,10 @@
     UILocalNotification *note = [[UILocalNotification alloc] init];
     note.fireDate = nil;
     note.repeatInterval = 0;
-    note.alertTitle = @"GeoFence Alert";
-    note.alertBody = [NSString stringWithFormat:@"You left the geofence"];
+    note.alertTitle = @"Stefanyccr Inc. Promo may expire!";
+    note.alertBody = [NSString stringWithFormat:@"You missed it!"];
     [[UIApplication sharedApplication] scheduleLocalNotification:note];
-    self.eventLabel.text = @"Exit";
+    self.eventLabel.text = @"See you";
     NSLog(@"*******Exit the region*******");
 }
 

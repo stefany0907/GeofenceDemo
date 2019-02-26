@@ -5,31 +5,22 @@
 http://www.topografix.com/GPX/1/1/gpx.xsd"
      version="1.1" 
      creator="gpx-poi.com">
-   <wpt lat="42.292337" lon="-83.717010">
-      <time>2019-02-20T05:27:00Z</time>
-   </wpt>   
-   <wpt lat="42.296437" lon="-83.707624">
-      <time>2019-02-20T05:27:30Z</time>   
+   <wpt lat="37.351" lon="-122.00">
+      <time>2019-02-20T05:27:20Z</time>   
    </wpt>
-   <wpt lat="42.294713" lon="-83.708525">
-      <time>2019-02-20T05:28:00Z</time>   
+   <wpt lat="37.351" lon="-122.003">
+      <time>2019-02-20T05:27:40Z</time>   
    </wpt>
-   <wpt lat="42.292040" lon="-83.716249">
-      <time>2019-02-20T05:29:00Z</time>   
+   <wpt lat="37.35" lon="-122.006">
+      <time>2019-02-20T05:27:50Z</time>   
    </wpt>
-   <wpt lat="42.290040" lon="-83.726249">
-      <time>2019-02-20T05:29:30Z</time>   
+   <wpt lat="37.35" lon="-122.00">
+      <time>2019-02-20T05:28:20Z</time>   
    </wpt>
-   <wpt lat="42.292040" lon="-83.716249">
-      <time>2019-02-20T05:30:00Z</time>   
+   <wpt lat="37.351" lon="-122.003">
+      <time>2019-02-20T05:28:30Z</time>   
    </wpt>
-   <wpt lat="42.294713" lon="-83.708525">
-      <time>2019-02-20T05:30:30Z</time>   
-   </wpt>
-   <wpt lat="42.296437" lon="-83.707624">
-      <time>2019-02-20T05:31:00Z</time>   
-   </wpt>
-   <wpt lat="42.292337" lon="-83.717010">
-      <time>2019-02-20T05:31:30Z</time>
+   <wpt lat="37.351" lon="-122.00">
+      <time>2019-02-20T05:28:40Z</time>
    </wpt> 
 </gpx>
